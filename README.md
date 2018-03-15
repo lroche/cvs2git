@@ -12,11 +12,11 @@ The conversion uses the version 3.1.2 of mercurial provided on jessie.
 
 # How to retrieve hg conversion ?
 
-At the end of process, the script launchs a bash session to allow to check the result, here from the example you can get the a2ps-hg directory by using `docker cp` command :
+At the end of process, the script launchs a bash session to allow to check the result, here from the example you can get the a2ps-git directory by using `docker cp` command :
 
-    docker cp <containerId>:/work/a2ps/a2ps-hg .
+    docker cp <containerId>:/work/a2ps/a2ps-git .
 
-You can also use a bind mount volume during your run:
+Better way can be to use a bind mount volume during your run:
 
     docker run [-it] -v ~/gitconversion/a2ps:/work/a2ps lroche/cvs2git a2ps cvs.savannah.gnu.org
 
